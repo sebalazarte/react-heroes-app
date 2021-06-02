@@ -9,11 +9,11 @@ export const HeroCard = ({
     characters
 }) => {
     return (
-        <div class="col">
-            <div class="card">
+        <div className="col">
+            <div className="card">
                 <img src={`./assets/heroes/${id}.jpg`} className="card-img-top" alt={superhero} />
-                <div class="card-body">
-                    <h5 class="card-title">{superhero}</h5>
+                <div className="card-body">
+                    <h5 className="card-title">{superhero}</h5>
                     {alter_ego !== characters &&
                         <p className="card-text">
                             {characters}
