@@ -8,7 +8,9 @@ export const SearchScreen = ({ history }) => {
 
     const location = useLocation();
     const { q = '' } = queryString.parse(location.search);
-
+    
+    localStorage.setItem('search', q);
+    
     const [inputText, setInputText] = useState(q);
 
     const hanldeInputChanged = ({ target }) => {
